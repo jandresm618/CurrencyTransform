@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CurrencyTransform</string>
+    <string name="value">Valor: </string>
+    <string name="cop">Peso Colombiano </string>
+    <string name="dollar">Dolar </string>
+    <string name="euro">Euro </string>
+    <string name="renminbi">Yuan </string>
+    <string name="rublo">Rublo Ruso </string>
+    <string name="result">Equivalente: </string>
+    <string name="getValue">Calcular</string>
+
+</resources>
