@@ -77,7 +77,6 @@
                     android:layout_gravity="center"
                     android:layout_weight="1"
                     android:contentDescription="@string/image_description"
-                    android:rotation="90"
                     app:srcCompat="@drawable/ic_launcher" />
 
                 <Spinner
