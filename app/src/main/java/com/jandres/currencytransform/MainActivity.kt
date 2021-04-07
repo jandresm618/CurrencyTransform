@@ -16,25 +16,25 @@ class MainActivity : AppCompatActivity() {
         setCustomSpinner()
 
         mainBinding.swapImageView.setOnClickListener {
-            var position1: Int = mainBinding.spinner.selectedItemPosition
+            val position1: Int = mainBinding.spinner.selectedItemPosition
             mainBinding.spinner.setSelection(mainBinding.spinner2.selectedItemPosition)
             mainBinding.spinner2.setSelection(position1)
         }
 
         mainBinding.resultButton.setOnClickListener {
-            val currencyObject: Currency = Currency
+            val currencyObject = Currency
             val position1: Int = mainBinding.spinner.selectedItemPosition
             val position2: Int = mainBinding.spinner2.selectedItemPosition
 
-            var value : String = mainBinding.valueTextInput.text.toString()
+            val value : String = mainBinding.valueTextInput.text.toString()
 
-            var value1: Float = currencyObject.values[position1].toFloat()
-            var value2: Float = currencyObject.values.get(position2).toFloat()
+            val value1: Float = currencyObject.values[position1]
+            val value2: Float = currencyObject.values[position2]
 
-            var result: Float = (value.toFloat()*value2)/value1
+            val result: Float = (value.toFloat()*value2)/value1
 
 
-            mainBinding.resultVarTextView.setText(result.toString())
+            mainBinding.resultVarTextView.text = result.toString()
         }
 
 
