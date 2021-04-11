@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(mainBinding.root)
 
+
         setCustomSpinner()
 
         mainBinding.swapImageView.setOnClickListener {
