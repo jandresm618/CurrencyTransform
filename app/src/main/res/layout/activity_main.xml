@@ -76,12 +76,8 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
-<<<<<<< HEAD
                     app:srcCompat="@mipmap/swapimage" />
-=======
-                    android:contentDescription="@string/image_description"
-                    app:srcCompat="@drawable/ic_launcher" />
->>>>>>> 31ab1fad5cfa37d2ddea1e43dfb501d3cb9cf65d
+
 
                 <Spinner
                     android:id="@+id/spinner2"
