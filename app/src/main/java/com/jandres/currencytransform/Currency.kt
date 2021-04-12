@@ -3,12 +3,12 @@ package com.jandres.currencytransform
 data class Currencys(val image: Int,val name: String)
 
 object Currency {
-    val values = floatArrayOf(
-            3661.69F,
-            1F,
-            0.85F,
-            6.56F,
-            76.43F
+    val values = doubleArrayOf(
+            3661.69,
+            1.0,
+            0.85,
+            6.56,
+            76.43
     )
 
     private val images = intArrayOf(

@@ -29,11 +29,12 @@ class MainActivity : AppCompatActivity() {
 
             val value : String = mainBinding.valueTextInput.text.toString()
 
-            val value1: Float = currencyObject.values[position1]
-            val value2: Float = currencyObject.values[position2]
+            val value1: Double = currencyObject.values[position1]
+            val value2: Double = currencyObject.values[position2]
 
-            val result: Float = (value.toFloat()*value2)/value1
+            var result: Double = (value.toDouble()*value2)/value1
 
+            result = String.format("%.2f", result).toDouble()
 
             mainBinding.resultVarTextView.text = result.toString()
         }
