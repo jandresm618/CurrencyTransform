@@ -76,6 +76,7 @@
                     android:layout_height="40dp"
                     android:layout_gravity="center"
                     android:layout_weight="1"
+                    android:contentDescription="@string/image_description"
                     app:srcCompat="@mipmap/swapimage" />
 
 
